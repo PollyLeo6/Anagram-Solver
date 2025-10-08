@@ -1,5 +1,7 @@
 # Anagram Solver RL Environment
 
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/PollyLeo6/Anagram-Solver/blob/main/train_agent.ipynb)
+
 Reinforcement Learning environment for training LLM agents to solve anagram puzzles using GRPO.
 
 ## 🎯 What is this?
@@ -75,11 +77,31 @@ python interactive_solver.py
 ```
 Enter your own anagrams and let the AI solve them!
 
-### 4. Train Agent
-Open `train_agent.ipynb` in Google Colab:
-- Loads Qwen2.5-1.5B-Instruct with unsloth
-- Trains with GRPO using custom reward function
-- Evaluates performance improvement
+### 5. Train Agent
+
+**Option A: Google Colab (Recommended)**
+1. Open [Google Colab](https://colab.research.google.com/)
+2. Upload `train_agent.ipynb` or create new notebook
+3. Run this setup code:
+```python
+# Clone repository
+!git clone https://github.com/PollyLeo6/Anagram-Solver.git
+%cd Anagram-Solver
+
+# Install dependencies
+!pip install -r requirements.txt
+
+# Generate datasets
+!python utils.py
+
+# Start training
+# (Follow notebook instructions)
+```
+
+**Option B: Local Training**
+```bash
+jupyter notebook train_agent.ipynb
+```
 
 ## 🏗️ Architecture
 
