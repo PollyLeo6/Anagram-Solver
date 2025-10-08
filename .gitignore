@@ -37,9 +37,14 @@ Thumbs.db
 
 # Data files (if generated)
 *.pkl
-*.json
 data/
 datasets/
+
+# Generated files
+dictionary.txt
+english_words.json
+train_dataset.jsonl
+test_dataset_difficulty_*.jsonl
 
 # Model checkpoints
 checkpoints/
