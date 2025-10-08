@@ -69,6 +69,12 @@ python demo.py
 ```
 Interactive testing - generate puzzles and test solutions.
 
+### 4. Interactive Solver
+```bash
+python interactive_solver.py
+```
+Enter your own anagrams and let the AI solve them!
+
 ### 4. Train Agent
 Open `train_agent.ipynb` in Google Colab:
 - Loads Qwen2.5-1.5B-Instruct with unsloth
@@ -106,6 +112,29 @@ python demo.py
 ## 🎮 Manual Testing
 
 Test the environment with `demo.py`:
+
+**Menu Options:**
+- **1** - Environment demo (automatic demonstration)
+- **2** - Interactive mode (solve anagrams yourself)
+- **3** - Exit
+
+**Important:** Enter only numbers (1, 2, or 3), not words!
+
+### 🤖 Interactive Solver
+
+Use `interactive_solver.py` for reverse mode - you input anagrams, AI solves them:
+
+```bash
+python interactive_solver.py
+```
+
+**Example:**
+```
+Enter anagram letters: tac
+✅ Found solutions:
+1. ['cat']
+JSON format: {"solutions": ["cat"]}
+```
 
 **Features:**
 - Generate tasks at different difficulty levels
